@@ -1,0 +1,198 @@
+1.public class main{
+public static void main(String[] args) 
+{
+ System.out.println("Let's learn 'JAVA' together with Selvi");
+}
+}
+Output:
+Let's learn 'JAVA' together with Selvi
+
+2.public class main{
+public static void main(String[] args) 
+{
+ System.out.println("If you want to shine like a \"Sun\",first burn like a \"Sun\".");
+}
+}
+Output:
+If you want to shine like a "Sun",first burn like a "Sun".
+
+3.public class main{
+public static void main(String[] args) 
+{
+ System.out.println("\\n ,%%, \\");
+}
+}
+Output:
+\n ,%%, \
+
+4.public class main{
+public static void main(String[] args) {
+    int num1=20;
+    int num2=10;
+    System.out.println(num1+" "+num2);
+}
+}
+Output:
+20 10
+
+5.import java.util.*;
+public class main{
+public static void main(String[] args) {
+    Scanner sc= new Scanner(System.in);
+    char character= sc.next().charAt(0);
+    System.out.println(character);
+}
+}
+Input:
+R
+Output:
+R
+
+6.import java.util.Scanner;
+public class main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int firstNumber = scanner.nextInt();
+        int secondNumber = scanner.nextInt();
+        System.out.printf("%05d \n %5d", firstNumber, secondNumber);}}
+Input:
+25
+98
+Output:
+00025 
+    98
+
+7.import java.util.*;
+public class main {
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        char character= sc.next().charAt(0);
+        int ASCIIvalue= character;
+        System.out.println(character+":"+ASCIIvalue);
+}
+}
+Input:
+R
+Output:
+R:82
+
+8.import java.util.*;
+public class main {
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        int Ascii= sc.nextInt();
+           char character= (char)Ascii; 
+           System.out.println(Ascii+":"+character);
+}
+}
+Input:
+43
+Output:
+43:+
+
+9.import java.util.Scanner;
+public class main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        float inputValue = scanner.nextFloat();
+        System.out.printf("%20.4f\n", inputValue);
+    }
+}
+Input:
+4.3
+Output:
+              4.3000
+
+10.import java.util.Scanner;
+public class main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        float floatValue = scanner.nextFloat();
+        int precision = scanner.nextInt();
+                 System.out.printf("%." + precision + "f", floatValue);
+    }
+}
+Input:
+4.3
+43
+Output:
+4.3000001907348630000000000000000000000000000
+
+11.import java.util.Scanner;
+public class main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        float inputValue = scanner.nextFloat();
+                System.out.println(Math.round(inputValue));
+    }
+}
+Input:
+4.3
+Output:
+4
+
+12.import java.util.Scanner;
+public class main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+         String input = scanner.next();
+        
+            long decimalValue = Long.parseLong(input.substring(2), 16);
+                System.out.println(decimalValue);
+    }
+}
+                 (OR)
+12.import java.util.Scanner;
+public class main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+         String input = scanner.next();
+        
+           
+                System.out.println(Integer.decode(input));
+    }
+}
+
+13.import java.util.Scanner;
+public class main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int input = scanner.nextInt();
+        
+        System.out.println(Integer.toHexString(input));
+    }
+}
+Input:
+43
+Output:
+2b
+
+14.import java.util.Scanner;
+
+public class main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String input = sc.next();
+        System.out.println(input.replaceAll("0*$", "").replaceAll("\\.$", ""));
+    }
+}
+
+15.public class main {
+    public static void main(String[] args) {
+        String part1 = "Hello";
+        String part2 = "World";
+        String result = part1 + " " + part2; 
+        System.out.println(result); 
+    }
+}
+Output:
+Hello World
+
+
+
+
+
+
+
+
+
