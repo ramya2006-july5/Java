@@ -1,0 +1,194 @@
+1.import java.util.Scanner;
+public class main
+{
+	public static void main(String[] args) {
+	    Scanner kbd=new Scanner(System.in);
+	    int year=kbd.nextInt();
+        if(year%400==0 || year%100!=0&&year%4==0)
+        System.out.println("leap year");
+        else
+        System.out.println("non leap year");
+	}
+}
+Input:
+2006
+Output:
+non leap year
+
+2.import java.util.Scanner;
+public class main
+{
+	public static void main(String[] args) {
+	    Scanner kbd=new Scanner(System.in);
+	    char choice=kbd.next().charAt(0);
+        switch(choice){
+            case 'A': System.out.println("Withdraw"); break;
+            case 'B': System.out.println("Deposit"); break;
+            case 'C': System.out.println("Balance Check"); break;
+            default: System.out.println("Thank you please enter A-C");
+        }
+        
+	}
+}
+Input:
+R
+Output:
+Thank you please enter A-C
+
+3.public class main
+{
+	public static void main(String[] args) {
+
+    int i=1;
+    do { 
+        System.out.println("Selvi");
+        i++;
+    } while (i<5);
+        
+        
+	}
+}
+Output:
+Selvi
+Selvi
+Selvi
+Selvi
+
+4.import java.util.Scanner;
+
+public class main
+{
+	public static void main(String[] args) {
+	    Scanner scan = new Scanner(System.in);
+        int n = scan.nextInt();
+        for(int i=1;i<=n;i++)
+        System.out.print(i+" ");  
+	}
+}
+Input:
+4
+Output:
+1 2 3 4 
+
+5.import java.util.Scanner;
+
+public class main
+{
+	public static void main(String[] args) {
+	    Scanner scan = new Scanner(System.in);
+        int n = scan.nextInt();
+        int i=n;
+        while(i>=1)
+        {        System.out.print(i+" ");
+                    i--;  
+                    System.out.println("A");
+        }
+    }
+}
+Input:
+4
+Output:
+4 A
+3 A
+2 A
+1 A
+
+6.public class main
+{
+	public static void main(String[] args) {
+        for(char i='A';i<='Z';i++)
+        System.out.print(i+" ");
+    }
+}
+Output:
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+
+7.import java.util.Scanner;
+public class main
+{
+	public static void main(String[] args) {
+	    Scanner scan = new Scanner(System.in);
+        char n = scan.next().charAt(0);
+        for(char i='Z';i>=n;i--)
+        System.out.print(i+" ");
+    }
+}
+Input:
+R
+Output:
+Z Y X W V U T S R
+
+8.import java.util.Scanner;
+public class main
+{
+	public static void main(String[] args) {
+	    Scanner scan = new Scanner(System.in);
+        int n = scan.nextInt();
+        for( int i=1;i<=n;i++){
+        for( int j=1;j<=n;j++)
+        System.out.print("*");
+        System.out.println();
+        }
+    }
+}
+Input:
+4
+Output:
+****
+****
+****
+****
+
+9.import java.util.Scanner;
+public class main
+{
+	public static void main(String[] args) {
+	    Scanner scan = new Scanner(System.in);
+        int n = scan.nextInt();
+        for( int row=1;row<=n;row++){
+        for( int col=1;col<=row;col++)
+        System.out.print("*");
+        System.out.println();
+        }
+    }
+}
+Input:
+4
+Output:
+*
+**
+***
+****
+
+10.import java.util.Scanner;
+public class main
+{
+	public static void main(String[] args) {
+	    Scanner scan = new Scanner(System.in);
+        int n = scan.nextInt();
+        for( int row=1;row<=n;row++){
+        for( int col=1;col<=n-row;col++)
+        System.out.print(" ");
+         for( int col=1;col<=row;col++)
+        System.out.print("*");
+        System.out.println();
+        }
+    }
+}
+Input:
+4
+Output:
+   *
+  **
+ ***
+****
+
+
+
+
+
+
+
+
+
+
